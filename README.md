@@ -10,4 +10,20 @@ The target feature is yield which is a continuous variable. The task is to class
 See Dataset/WildBlueberryPollinationSimulationData.csv
 
 ## Webpage
-https://wild-berry-yield-prediction.herokuapp.com/
+
+**Solution:**
+
+1) EDA using matplotlib, pandas and seaborn
+2) Feature selection using `mutual_info_regressor`
+3) Kmeans Clustering to cluster types of bees columns
+4) Standardizing input features
+5) Basline modeling using gradient boosted trees: `RMSE - 144`
+6) Cross validation using gradient boosted trees: `RMSE - 159`
+7) Model hyperparameters tuning using pipeline object with XGBRegressor: `RMSE - 130`
+8) R2 Score : `0.9914372602207959`
+9) Explainable AI using `shap` 
+
+**Learning outcomes:**
+
+- Feature selection methods
+- Development of machine learning pipelines using sklearn's pipeline object
